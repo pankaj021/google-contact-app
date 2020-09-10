@@ -1,0 +1,96 @@
+header{
+    display: flex;
+    background: linear-gradient(90.21deg, #053ED1 0%, #0F4EAC 100%);
+    align-items: center;
+    padding: .5rem 2rem;
+    color: #FFFFFF;
+    height: 64px;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.user-logo{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.person-info{
+    line-height: 1;
+    margin-left: 1rem;
+}
+.user-txt{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+}
+.email-logo{
+    font-size: 12px;
+    margin-top: .25rem;
+}
+.contacts{
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+.contact-list{
+    overflow: auto;
+    max-width: 1200px;
+    height: calc(100vh - 10rem);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(5, 62, 209, 0.14);
+    border-radius: 8px;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 1rem;
+}
+.c-items{
+    flex: 1;
+}
+.contact-head{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: #2750bb;
+}
+
+@media only screen and (max-width: 720px) {
+    .contacts{
+        width: 95%;
+        margin: auto;
+    }
+    .contact-info{
+        margin-left: .5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .contact{
+        border-radius: 5px;
+        padding: .75rem .5rem;
+        margin-bottom: .5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .user-logo{
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .c-items{
+        flex: none;
+    }
+}
